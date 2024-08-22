@@ -1,0 +1,111 @@
+.location {
+    padding: 8px 32px;
+
+    .title {
+        color: #000000;
+        text-align: left;
+        margin-left: 16px;
+        margin-bottom: 32px;
+
+        &::before {
+            content: "";
+            position: relative;
+            display: block;
+            left: -16px;
+            bottom: -72px;
+            width: 8px;
+            height: 72px;
+            background-color: #9F1213;
+        }
+    }
+
+    .select_title {
+        font-size: 24px;
+        margin-right: 16px;
+        padding: 1px 0;
+    }
+
+    .district {
+        width: 304px;
+        height: 38px;
+        font-size: 18px;
+        color: #495057;
+        opacity: 75%;
+        padding: 6px 12px;
+        border: 1px solid #CED4DA;
+        appearance: auto;
+    }
+
+    .address {
+        flex-wrap: wrap;
+        margin: 40px -12px 0px -12px;
+    }
+
+    .add_card {
+        max-width: 33.333%;
+        padding: 0 12px 48px 12px;
+    }
+
+    .add_title {
+        padding: 8px 24px;
+        font-size: 24px;
+        border: 1px solid #00000020;
+    }
+
+    .add_text {
+        font-size: 20px;
+        padding: 16px 24px;
+        border: 1px solid #00000020;
+    }
+
+    .details {
+        font-size: 19px;
+        display: block;
+        padding: 16px 0;
+        text-align: center;
+        color: #FFFFFF;
+        background-color: #000000;
+    }
+}
+
+@include tablet {
+    .location {
+        .add_card {
+            max-width: 50%;
+        }
+    }
+}
+
+@include mobile {
+    .location {
+        padding: 4px 12px 16px 12px;
+
+        .title {
+            font-size: 24px;
+
+            &::before {
+                bottom: -36px;
+                height: 36px;
+            }
+        }
+
+        .select_title {
+            font-size: 16px;
+            margin-right: 8px;
+            padding: 7px 0;
+
+        }
+
+        .district {
+            width: 276px;
+        }
+
+        .address {
+            margin: 24px -12px 0px -12px;
+        }
+
+        .add_card {
+            max-width: 100%;
+        }
+    }
+}

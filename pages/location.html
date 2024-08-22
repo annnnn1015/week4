@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <title>門市據點</title>
+</head>
+
+<body>
+  <%- include('./layout/header'); -%>
+    <main class="location container">
+      <h3 class="title">門市據點</h3>
+      <div class="df">
+        <p class="select_title">選擇地區</p>
+        <select name="district" class="district">
+          <option value="台北市" selected>台北市</option>
+          <option value="台中市" id="Taichung">台中市</option>
+          <option value="高雄市" id="Kaohsiung">高雄市</option>
+        </select>
+      </div>
+
+      <ul class="address df">
+        <li class="add_card">
+          <img src="../assets/images/store-1.png" alt="Taipei City Zhongshan Store">
+          <h4 class="add_title">台北中山旗艦店</h4>
+          <div class="add_text">
+            <p><span class="material-symbols-outlined">
+                call
+              </span>電話：(02)000-1234</p>
+            <p><span class="material-symbols-outlined">
+                schedule
+              </span>營業時間：10:00-21:00</p>
+            <p><span class="material-symbols-outlined">
+                location_on
+              </span>地址：台北市中山區南京東路25巷2-1號</p>
+          </div>
+          <a href="../pages/map.html" class="details">詳細資訊</a>
+        </li>
+        <li class="add_card">
+          <img src="../assets/images/store-2.png" alt="Taipei Green Garden Store">
+          <h4 class="add_title">台北綠園店</h4>
+          <div class="add_text">
+            <p><span class="material-symbols-outlined">
+                call
+              </span>電話：(02)000-2345</p>
+            <p><span class="material-symbols-outlined">
+                schedule
+              </span>營業時間：10:00-21:00</p>
+            <p><span class="material-symbols-outlined">
+                location_on
+              </span>地址：台北市中正區復興南路 132-1 號</p>
+          </div>
+          <a href="#" class="details">詳細資訊</a>
+        </li>
+        <li class="add_card">
+          <img src="../assets/images/store-3.png" alt="Taichung Qingshui Flagship Store">
+          <h4 class="add_title">台中清水旗艦店</h4>
+          <div class="add_text">
+            <p><span class="material-symbols-outlined">
+                call
+              </span>電話：(02)000-1234</p>
+            <p><span class="material-symbols-outlined">
+                schedule
+              </span>營業時間：10:00-21:00</p>
+            <p><span class="material-symbols-outlined">
+                location_on
+              </span>地址：台中市清水區經南一路 23 號 8 樓</p>
+          </div>
+          <a href="#" class="details">詳細資訊</a>
+        </li>
+        <li class="add_card">
+          <img src="../assets/images/store-4.png" alt="Kaohsiung Zhongzheng Image Store">
+          <h4 class="add_title">高雄中正形象店</h4>
+          <div class="add_text">
+            <p><span class="material-symbols-outlined">
+                call
+              </span>電話：(07)000-2345</p>
+            <p><span class="material-symbols-outlined">
+                schedule
+              </span>營業時間：10:00-21:00</p>
+            <p><span class="material-symbols-outlined">
+                location_on
+              </span>地址：高雄市苓雅區中正路 38 號 12 樓</p>
+          </div>
+          <a href="#" class="details">詳細資訊</a>
+        </li>
+        <li class="add_card">
+          <img src="../assets/images/store-5.png" alt="Kaohsiung Dream Mall Store">
+          <h4 class="add_title">高雄夢時代店</h4>
+          <div class="add_text">
+            <p><span class="material-symbols-outlined">
+                call
+              </span>電話：(07)000-1234</p>
+            <p><span class="material-symbols-outlined">
+                schedule
+              </span>營業時間：10:00-21:00</p>
+            <p><span class="material-symbols-outlined">
+                location_on
+              </span>地址：高雄市前鎮區中華一路 63 號 6 樓</p>
+          </div>
+          <a href="#" class="details">詳細資訊</a>
+        </li>
+      </ul>
+    </main>
+
+
+
+    <%- include('./layout/footer'); -%>
+
+      <script type="module" src="../main.js"></script>
+</body>
+
+</html>
